@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./script/app.js" type="module"></script>
+</head>
+
+<header>
+    <h1>SKIT PARKING SYSTEM</h1>
+</header>
+
+<body>
+    <form action="" ><fieldset>
+        <h2>User Registration</h2>
+        <input type="text" id="userName" placeholder="Name" pattern="[A-Z a-z]+" required/>        <!--  padding box -->
+        <input type="text" id="userContact" placeholder="Contact No." pattern="[0-9]{10}" required/>
+        <!-- <div>
+            <label >Gender :
+        <input type="radio" name="gender" id="gender" checked/>Male</label>
+        <label><input type="radio" name="gender" id="gender"/>Female</label>
+        <label><input type="radio" name="gender" id="gender"/>Other</label>
+    </div> -->
+
+        <div>
+            <label>User Role :
+                <select id="userRole" required>                                                       <!--  border box -->
+                    <option disabled selected>-- Select --</option>
+                    <option value="student">Student</option>
+                    <option value="faculty">Faculty</option>
+                </select>
+            </label>
+        </div>
+
+        <input type="submit" id="userSubmitButton" name="Submit"/>
+
+    </fieldset></form>
+    
+    <form action="_blank">
+        <fieldset>
+            <h2>Vehicle Details</h2>
+        <input type="text" name="name" id="number" placeholder="Vehicle No." pattern="[A-Z a-z 0-9]+" required/>
+        <!-- <input type="text" name="name" id="owner" placeholder="Owner Name" pattern="[A-Z a-z]+" required/> -->
+
+        <label>Type of Vehicle  :
+            <select id = "type" required >                                                       <!--  border box -->
+                <option disabled selected>-- Select --</option>
+                <option value="cycle">Bicycle</option>
+                <option value="bike">Motorcycle</option>
+                <option value="car">Car</option>
+            </select>
+        </label>
+
+
+        <input type="submit" id="vehicleSubmitButton" name="Submit"/>
+        </fieldset>
+    </form>
+
+    <form action="" >
+        <fieldset>
+            <h2>Pass Choice</h2>
+            <div id="passChoice">  
+                
+                
+            </div>
+        </fieldset>
+    </form>
+    <!-- <form action="_blank" id="passtype"> <fieldset>
+        <h2>Pass Choice</h2>
+        <input type="button" id="daily" name="pass" value="Daily Pass">
+        <input type="button" id="monthly" name="pass" value="Monthly Pass">
+        <input type="button" id="yearly" name="pass" value="Yearly Pass">
+    </fieldset></form>   -->
+    
+    <form action="">
+        <div id="ticket">
+            
+            <!-- <div>Pass Id : ________</div>
+                <div>Vehicle Id : ________</div>
+                <div>Owner Id : ________</div>
+                <div>Expiry Date : ________</div> -->
+        </div>
+    </form>
+
+    <footer>
+        &copy; Copyright 2023
+    </footer>
+
+</body>
+
+</html>
